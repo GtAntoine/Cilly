@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Cilly",
+  "ProjectGuid": "443d9177-99d5-4147-94b7-b9459b7fe158",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Cilly",
+  "DisplayName": "Cilly",
+  "Author": "",
+  "Description": "Cilly",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{86a8b1f4-d7b6-44c8-a57f-8a923f46003c}",
+  "WP8ProductID": "{c8a952b4-e9b3-4930-93ae-0b98a2c37ae7}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Cilly",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
