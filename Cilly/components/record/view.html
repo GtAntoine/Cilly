@@ -1,0 +1,43 @@
+<div data-role="view" data-title="View" data-layout="main" data-model="app.record" data-show="app.record.onShow" data-after-show="app.record.afterShow" id="recordScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-bind="text: strings.record.title"></span>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_record -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <img id='loadingRecord' src="img/ripple.svg" class="loading hide"/>
+
+    <div id="recordZone">
+        <div class="nd2-card">
+            <div class="card-title has-supporting-text">
+                <h3 id="userRecord" class="card-primary-title"></h3>
+                <h5 id="dateRecord" class="card-subtitle">2017-05-22 14:59:39</h5>
+            </div>
+
+            <div id="messageRecord" class="card-supporting-text has-action has-title">add srdc</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="media"></div>
+        <div id="videoArea"></div>
+    </div>
+        
+    <footer data-role="footer" style='height: 9.34em; border-top: 1px solid #ebecee;'>
+        <div id="messageRecordAction" style="background-color: white;">
+            <a id="btnRefresh" onclick="changeMsg()" class='activeLight' data-icon="refresh" data-role="button"></a>
+            <a id="btnRec" class='activeFull' data-icon="rec" data-role="button" onclick="captureVideo()"></a>
+            <a id="btnPlay" data-icon="play" onclick="playRecord()" data-role="button" ></a>
+            <a id="btnUpl" data-role="button" onclick="uploadCilly()" data-icon="upl"></a>
+        </div>
+        <div data-role="tabstrip" id="navigation-container">
+            <a href="components/home/view.html" data-icon="globe"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
+            <a href="components/record/view.html" data-icon="cam"><span class="navigation-link-text" data-bind="text: strings.record.title"></span></a>
+            <a href="components/message/view.html" data-icon="msg"><span class="navigation-link-text" data-bind="text: strings.message.title"></span></a>
+            <a href="components/cilly/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.cilly.title"></span></a>
+        </div>
+    </footer>    
+    <!-- END_CUSTOM_CODE_record -->
+</div>

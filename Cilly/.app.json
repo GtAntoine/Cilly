@@ -5,9 +5,33 @@
       "type": "kendo-ui-mobile:view",
       "name": "home",
       "components": [],
-      "title": "Home View",
+      "title": "Accueil",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "record",
+      "components": [],
+      "title": "Enregistrer",
+      "addToNavigation": true,
+      "icon": "camera"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "message",
+      "components": [],
+      "title": "Message",
+      "addToNavigation": true,
+      "icon": "edit"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "cilly",
+      "components": [],
+      "title": "Cilly",
+      "addToNavigation": true,
+      "icon": "play"
     }
   ],
   "dataProviders": [],

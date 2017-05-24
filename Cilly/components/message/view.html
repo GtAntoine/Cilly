@@ -1,0 +1,28 @@
+<div data-after-show="app.message.afterShow" data-model="app.message" data-role="view" data-title="Flexbox Demo"  data-layout="main" id="scroller-view" data-init="initListView" data-stretch="true" class="screen">
+     
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-bind="text: strings.message.title"></span>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_message -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <div class="container">
+        <!-- filtre
+            <div class="search">
+            <input type="search" class="k-textbox" placeholder="Search..." />
+        </div> -->
+        <div id="scroller" data-role="scroller" class="scroller-content">
+            <ul id="listviewMessage"></ul>
+        </div>
+        <div class="static  flexcontainer">
+            <div class='child80 height100' >
+                <textarea  data-change="activeSetMessageButton" id="txtMsg" maxlength="140"  placeholder="New message..." style="background-color: #FFFFFF; width: 100%"></textarea> 
+            </div>
+            <a id="sendMessage" data-click="sendClick" class='child20' data-icon="upl" data-role="button" style="margin: 0em 0em;"></a>
+        </div>
+    </div>
+
+    <!-- END_CUSTOM_CODE_message -->
+</div>

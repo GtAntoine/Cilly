@@ -1,0 +1,36 @@
+<div data-after-show="app.cilly.afterShow" data-model="app.home"  data-role="view" data-title="Flexbox Demo"  data-layout="main" id="scroller-view" data-init="listViewInit" data-stretch="true">
+   <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-bind="text: strings.cilly.title"></span>
+        </div>
+    </header>
+
+      <div class="container">
+           <div class="staticProfil">
+               <img id='profilPic' src="img.jpg">
+               <p id='profilName'>GtAntoine</p>
+                <ul data-role="buttongroup" data-index="1">
+                    <li>My vidéos</li>
+                    <li>Likes</li>
+                </ul>
+           </div>
+        <!-- filtre
+            <div class="search">
+          <input type="search" class="k-textbox" placeholder="Search..." />
+        </div> -->
+        <div data-role="scroller" class="scroller-content">
+          liste de mes cilly ici
+            
+          <ul id="flat-listview"></ul>
+        </div>
+       
+      </div>
+    </div>
+    <script>
+
+      var data = [ "Sashimi salad", "Chirashi sushi", "Seaweed salad", "Edamame", "Miso soup", "Maguro", "Shake", "Shiromi", "Tekka maki", "Hosomaki Mix", "California rolls", "Seattle rolls", "Spicy Tuna rolls", "Ebi rolls", "Chicken Teriyaki", "Salmon Teriyaki", "Gohan", "Tori Katsu", "Yaki Udon", "Sashimi salad", "Chirashi sushi", "Seaweed salad", "Edamame", "Miso soup", "Maguro", "Shake", "Shiromi", "Tekka maki", "Hosomaki Mix", "California rolls", "Seattle rolls", "Spicy Tuna rolls", "Ebi rolls", "Chicken Teriyaki", "Salmon Teriyaki", "Gohan", "Tori Katsu", "Yaki Udon" ];
+
+      function listViewInit() {
+        $("#flat-listview").kendoMobileListView({ dataSource: data });
+      }
+    </script>

@@ -5,6 +5,21 @@
     "qrCodeScan": "Scan"
   },
   "home": {
-    "title": "Home View"
+    "title": "Home"
+  },
+  "record": {
+    "title": "Record"
+  },
+  "message": {
+    "title": "Message"
+  },
+  "cilly": {
+    "title": "My Cilly"
+  },
+  "signin": {
+    "title": "Welcome to Cilly !"
+  },
+  "signup": {
+    "title": "Welcome to Cilly !"
   }
 }

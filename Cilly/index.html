@@ -6,18 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
-
+    
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    <link href="styles/nativedroid2.css" rel="stylesheet">
 
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="iscroll.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
+    <script src="components/cilly/index.js"></script>
+    <script src="components/message/index.js"></script>
+    <script src="components/record/index.js"></script>
     <script src="components/home/index.js"></script>
+    <script src="components/login/index.js"></script>
+    <script src="components/signup/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
@@ -26,13 +34,15 @@
         </header>
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
+                <a href="components/home/view.html" data-icon="globe"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
+                <a href="components/record/view.html" data-icon="cam"><span class="navigation-link-text" data-bind="text: strings.record.title"></span></a>
+                <a href="components/message/view.html" data-icon="msg"><span class="navigation-link-text" data-bind="text: strings.message.title"></span></a>
+                <a href="components/cilly/view.html" data-icon="play"><span class="navigation-link-text" data-bind="text: strings.cilly.title"></span></a>
             </div>
             <div id="navigation-container-more" style="display: none">
             </div>
         </footer>
     </div>
-
 
     <div id="navigation-show-more-view" data-role="view" data-title="Show More" data-layout="main">
         <header data-role="header">

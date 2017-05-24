@@ -1,0 +1,42 @@
+<div data-init="initListViewTrend"  data-role="view" data-title="View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow" id="homeScreen" class="screen">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span data-bind="text: strings.signin.title"></span>
+        </div>
+    </header>
+
+    <!-- START_CUSTOM_CODE_home -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <div class="logo-image"></div>
+    <div>
+        <h3 data-bind="visible: isLoggedIn">Welcome, <span data-bind="    text: username"></span>!</h3>
+        <input id="logout" type="submit" data-role="button" data-bind="click: onLogout, visible: isLoggedIn" value="Logout" class="login-button" />
+    </div>
+    <form data-bind="events: { keyup: checkEnter }">
+        <ul data-role="listview" data-style="inset" data-bind="invisible: isLoggedIn">
+            <li>
+                <label>
+                    <div>Username</div>
+                    <input type="text" data-bind="value: username" />
+                </label>
+            </li>
+            <li>
+                <label>
+                    <div>Password</div>
+                    <input type="password" data-bind="value: password" />
+                </label>
+            </li>
+        </ul>
+        <input id="login" type="submit" data-role="button" data-bind="click: onLogin, invisible: isLoggedIn" value="Sign in !" class="login-button" />
+    </form>
+
+    <a class='lgBtn' href="components/signup/view.html" data-role="button" >Sign up</a>    
+
+        <footer data-role="footer">
+        <div data-role="tabstrip" id="navigation-container">
+            <a href="components/home/view.html" data-icon="globe"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
+        </div>
+    </footer>
+    <!-- END_CUSTOM_CODE_home -->
+</div>
+
